@@ -4,6 +4,9 @@ languageCode = "en-us"
 title = "Site Title"
 theme = "RCF-Bootstrap"
 
+baseurl = "/"
+
 # https://gohugo.io/variables/site/#the-site-params-variable
 [params]
     copyright = "Copyright © 2019 Name of Author"
+    homepage_banner_text = "Welcome"

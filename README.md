@@ -7,3 +7,5 @@ Demo live at <https://hugo-bootstrap.netlify.com/>
 Utilizing Hugo `0.54.0`
 
 SSG Skeleton utilizing the Hugo engine and Bootstrap.
+
+Develop using `hugo server --watch`

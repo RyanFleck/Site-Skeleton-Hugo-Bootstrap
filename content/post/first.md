@@ -1,8 +1,14 @@
 ---
-title: "About"
-date: 2019-02-12T21:09:50-05:00
+title: "First"
+date: 2019-02-12T22:24:16-05:00
 draft: false
 ---
+
+This post was created using the `hugo new` command.
+
+```sh
+hugo new post/first.md
+```
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est sit amet facilisis magna etiam tempor. Cras tincidunt lobortis feugiat vivamus. Vitae nunc sed velit dignissim sodales ut. Elementum facilisis leo vel fringilla est ullamcorper eget nulla. Quis lectus nulla at volutpat diam ut venenatis. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Dui vivamus arcu felis bibendum ut tristique et egestas. Diam maecenas sed enim ut sem viverra. Lobortis mattis aliquam faucibus purus in massa tempor nec. Vulputate eu scelerisque felis imperdiet proin. Sagittis eu volutpat odio facilisis. Semper auctor neque vitae tempus quam pellentesque nec nam. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac. Pellentesque dignissim enim sit amet venenatis urna cursus eget nunc. Proin sagittis nisl rhoncus mattis rhoncus. Interdum varius sit amet mattis vulputate enim. Et malesuada fames ac turpis egestas maecenas pharetra convallis posuere.
 
