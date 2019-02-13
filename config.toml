@@ -4,7 +4,7 @@ languageCode = "en-us"
 title = "Site Title"
 theme = "RCF-Bootstrap"
 
-baseurl = "/"
+baseurl = "https://hugo-bootstrap.netlify.com/"
 
 # https://gohugo.io/variables/site/#the-site-params-variable
 [params]
