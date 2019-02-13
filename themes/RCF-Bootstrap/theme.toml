@@ -3,19 +3,13 @@
 
 name = "RCF Bootstrap"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = ""
-homepage = "http://example.com/"
+licenselink = "https://github.com/RyanFleck/Site-Skeleton-Hugo-Bootstrap/blob/master/LICENSE"
+description = "Minimally modified bootstrap."
+homepage = "https://github.com/RyanFleck/Site-Skeleton-Hugo-Bootstrap"
 tags = []
 features = []
 min_version = "0.41"
 
 [author]
-  name = ""
-  homepage = ""
-
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
+  name = "Ryan Fleck"
+  homepage = "https://www.ryanfleck.ca"
