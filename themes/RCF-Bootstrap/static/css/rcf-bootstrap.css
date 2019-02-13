@@ -1,3 +1,8 @@
+html{
+    scroll-behavior: smooth;
+    min-width: 320px;
+}
+
 main>.container {
     padding: 60px 15px 0;
 }
