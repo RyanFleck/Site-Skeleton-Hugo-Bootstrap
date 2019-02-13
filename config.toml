@@ -7,4 +7,5 @@ theme = "RCF-Bootstrap"
 # https://gohugo.io/variables/site/#the-site-params-variable
 [params]
     copyright = "Copyright © 2019 Name of Author"
-    homepage_banner_text = "Welcome"
+    homepage_banner_title = "Hello."
+    homepage_banner_lead = "Title and lead can be modified in config.toml"
