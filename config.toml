@@ -1,4 +1,9 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "RCF Hugo Bootstrap Site Skeleton"
+# https://gohugo.io/variables/site/#site-variables-list
+title = "Site Title"
 theme = "RCF-Bootstrap"
+
+# https://gohugo.io/variables/site/#the-site-params-variable
+[params]
+    copyright = "Copyright © 2019 Name of Author"
