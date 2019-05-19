@@ -1,1 +1,7 @@
-This content is stored in `_index.md`. Next they turned to the business table. On the desk, among the neat array of papers, a large envelope was uppermost, and bore, in the doctor’s hand, the name of Mr. Utterson. The lawyer unsealed it, and several enclosures fell to the floor. The first was a will, drawn in the same eccentric terms as the one which he had returned six months before, to serve as a testament in case of death and as a deed of gift in case of disappearance; but in place of the name of Edward Hyde, the lawyer, with indescribable amazement read the name of Gabriel John Utterson.
+I'm glad you've stumbled upon my *hugo* theme. Hugo has a few advangages over my previous staple SSG, *Jekyll*, and so I am migrating to it. This template has been built with the following features:
+
+1. The **navbar** is sticky and has the usual BootStrap scroll-open menu. It is populated with all of the pages at the content root, plus a link to each section's index. No additional programming is needed to add pages to the navbar/menu.
+2. All important text on the site is pulled from `config.toml`, so you (the user) don't have to dig through tons of HTML to change, for instance, the site title. This is certainly best practice, but this is my first reusable template, and I forgot about this important step at first.
+3. **BootStrap!** Customizing this template is easy, as bootstrap has been included for easy container and element management.
+
+This index content is stored in `_index.md`.
