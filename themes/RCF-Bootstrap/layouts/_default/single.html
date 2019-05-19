@@ -1,9 +1,12 @@
 {{ define "main" }}
 <main>
 <h1 class="mt-5">{{ .Title }}</h1>
+
+{{ if .Date }}
 <small>
 <p class="text-muted">{{ .Date }}</p>
 </small>
+{{ end }}
 
 {{ if .Params.summary }}
     <p>{{ .Params.summary }}</p>
