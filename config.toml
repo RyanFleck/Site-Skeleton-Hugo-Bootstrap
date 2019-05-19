@@ -14,11 +14,3 @@ sectionPagesMenu = "main"
     homepage_banner_lead = "Title and lead can be modified in config.toml"
     site_svg_src = "/icons/brain.svg"
     long_site_title = "Long Site Title"
-
-[menu]
-  [[menu.main]]
-    identifier = "about"
-    name = "About this site."
-    title = "About"
-    url = "/about/"
-    weight = 0
