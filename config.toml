@@ -9,7 +9,8 @@ sectionPagesMenu = "main"
 
 # https://gohugo.io/variables/site/#the-site-params-variable
 [params]
-    copyright = "Copyright © 2019 Name of Author"
+    copyright = "Copyright © 2019 Name of Entity"
+    author = "Firstname Lastname"
     homepage_banner_title = "Hello."
     homepage_banner_lead = "Title and lead can be modified in config.toml"
     site_svg_src = "/icons/brain.svg"

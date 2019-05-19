@@ -1,9 +1,7 @@
 ---
 title: "About"
-date: 2019-02-12T21:09:50-05:00
-draft: false
 toc: true
-summary: "About this site."
+summary: "This page contains information about the site, the author and the tools used to create the site."
 ---
 
 # Lorem Ipsum
