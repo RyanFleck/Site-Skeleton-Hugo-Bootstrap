@@ -1,0 +1,1 @@
+This content is stored in `_index.md`.
