@@ -3,6 +3,8 @@ languageCode = "en-us"
 # https://gohugo.io/variables/site/#site-variables-list
 title = "Site Title"
 theme = "RCF-Bootstrap"
+pygmentsCodeFences = true
+pygmentsStyle = "vs"
 
 # https://gohugo.io/variables/site/#the-site-params-variable
 [params]

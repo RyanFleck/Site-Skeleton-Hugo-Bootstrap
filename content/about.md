@@ -6,6 +6,27 @@ draft: false
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est sit amet facilisis magna etiam tempor. Cras tincidunt lobortis feugiat vivamus. Vitae nunc sed velit dignissim sodales ut. Elementum facilisis leo vel fringilla est ullamcorper eget nulla. Quis lectus nulla at volutpat diam ut venenatis. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Dui vivamus arcu felis bibendum ut tristique et egestas. Diam maecenas sed enim ut sem viverra. Lobortis mattis aliquam faucibus purus in massa tempor nec. Vulputate eu scelerisque felis imperdiet proin. Sagittis eu volutpat odio facilisis. Semper auctor neque vitae tempus quam pellentesque nec nam. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac. Pellentesque dignissim enim sit amet venenatis urna cursus eget nunc. Proin sagittis nisl rhoncus mattis rhoncus. Interdum varius sit amet mattis vulputate enim. Et malesuada fames ac turpis egestas maecenas pharetra convallis posuere.
 
+```js
+function getTopicCount(topic) {
+    const https = require('https');
+    const wiki = https.get(
+        'https://en.wikipedia.org/w/api.php?action=parse&section=0&prop=text&format=json&page='.concat(topic.trim()),
+        (res) => {
+            const response_array = [];
+            res.on('data', (x) => {
+                response_array.push(x.toString());
+            }).on('end', () => {
+                console.log((response_array.join('').match(new RegExp(topic, 'g')) || []).length);
+            }).on('error', (err) => {
+                console.log(`ERR -> wiki -> res\n${err}`);
+            });
+        },
+    ).on('error', (err) => {
+        console.log(`ERR -> wiki \n${err}`);
+    });
+}
+```
+
 Elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere. In ante metus dictum at tempor commodo ullamcorper a lacus. Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Porta non pulvinar neque laoreet suspendisse interdum consectetur libero. Egestas quis ipsum suspendisse ultrices gravida dictum. Neque convallis a cras semper auctor. Nec nam aliquam sem et tortor consequat. Scelerisque felis imperdiet proin fermentum leo vel orci porta. Phasellus egestas tellus rutrum tellus pellentesque eu. Blandit turpis cursus in hac habitasse platea dictumst. Sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Lacinia quis vel eros donec. Dolor purus non enim praesent elementum facilisis leo vel fringilla. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Et malesuada fames ac turpis egestas maecenas pharetra convallis posuere. Commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Risus sed vulputate odio ut enim blandit.
 
 Placerat duis ultricies lacus sed turpis tincidunt id. Id porta nibh venenatis cras sed felis eget velit. Duis convallis convallis tellus id interdum. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Maecenas sed enim ut sem viverra aliquet eget sit amet. Enim praesent elementum facilisis leo vel fringilla. Habitant morbi tristique senectus et. Nisi lacus sed viverra tellus in. Convallis posuere morbi leo urna molestie at elementum. Vitae et leo duis ut diam quam. Quam quisque id diam vel quam. Adipiscing elit pellentesque habitant morbi tristique senectus et. Suspendisse in est ante in nibh. Odio ut enim blandit volutpat. Venenatis lectus magna fringilla urna. Sem nulla pharetra diam sit amet nisl suscipit. Malesuada fames ac turpis egestas. Posuere morbi leo urna molestie.
