@@ -1,9 +1,13 @@
 {{ define "main" }}
 <main>
+
+<h1 class="mt-5">{{ .Title }}</h1>
+
+{{ .Content }}
+
 {{ range .Pages }}
 <article>
     <h2>{{ .Title }}</h2>
-    {{ .Content }}
 </article>
 {{ end }}
 </main>

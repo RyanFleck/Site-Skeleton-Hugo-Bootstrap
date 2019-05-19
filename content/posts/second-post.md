@@ -3,7 +3,7 @@ title: "Second Post"
 date: 2019-02-13T09:01:25-05:00
 image: "/content-cover-images/coffee-phone.jpg"
 summary: "Content summary should be written here."
-draft: true
+draft: false
 ---
 This post was created using the `hugo new` command.
 
