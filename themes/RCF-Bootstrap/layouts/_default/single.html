@@ -3,5 +3,18 @@
 <small>
 <p class="text-muted">{{ .Date }}</p>
 </small>
+
+{{ if .Params.summary }}
+    <p>{{ .Params.summary }}</p>
+{{ end }}
+{{ if .Params.toc }}
+    <br />
+    <h4>Contents</h4>
+    {{ .TableOfContents }}
+    <br />
+{{ end }}
+
 {{ .Content }}
+
+
 {{end}}
