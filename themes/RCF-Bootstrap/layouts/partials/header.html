@@ -17,13 +17,7 @@
 
                 {{ range .Site.Menus.main }}
                 <li class="nav-item">
-                        <a class="nav-link
-                        {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} disabled {{end}}
-                        " 
-                        {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
-                        tabindex="-1" aria-disabled="true"
-                        {{end}}
-                        href="{{ .URL }}">{{ .Title }}</a>
+                        <a class="nav-link" href="{{ .URL }}">{{ .Title }}</a>
                 </li>
 
                 {{ end }}
