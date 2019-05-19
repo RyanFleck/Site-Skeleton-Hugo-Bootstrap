@@ -5,6 +5,7 @@ title = "Site Title"
 theme = "RCF-Bootstrap"
 pygmentsCodeFences = true
 pygmentsStyle = "vs"
+sectionPagesMenu = "main"
 
 # https://gohugo.io/variables/site/#the-site-params-variable
 [params]
@@ -13,3 +14,4 @@ pygmentsStyle = "vs"
     homepage_banner_lead = "Title and lead can be modified in config.toml"
     site_svg_src = "/icons/brain.svg"
     long_site_title = "Long Site Title"
+

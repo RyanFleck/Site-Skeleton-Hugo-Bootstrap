@@ -13,28 +13,35 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ml-auto">
 
-                    {{ range .Sections }}
-                    <li class="nav-item">
-                            <a class="nav-link" href="{{ .Permalink }}">{{ .Title }}</a>
-                    </li>
+                {{ $currentPage := . }}
+
+                {{ range .Site.Menus.main }}
+                <li class="nav-item">
+                        <a class="nav-link
+                        {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} disabled {{end}}
+                        " 
+                        {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
+                        tabindex="-1" aria-disabled="true"
+                        {{end}}
+                        href="{{ .URL }}">{{ .Title }}</a>
+                </li>
+
+                {{ end }}
+
+                {{ range .Site.Menus.main }}
+                    {{ range .Children }}
+                <li class="nav-item">
+                        <a class="nav-link" href="{{ .URL }}">{{ .Title }}</a>
+                </li>
                     {{ end }}
-                    
-                    {{ range where .Site.Pages "Section" .Section }}
-                        {{ if .Title }}
-                        <li class="nav-item">
-                                <a class="nav-link" href="{{ .Permalink }}">{{ .Title }}</a>
-                        </li>
-                        {{ end }}
-                    {{ end }}
+                {{ end }}
 
                 <!--
                 <li class="nav-item">
                     <a class="nav-link disabled" tabindex="-1" aria-disabled="true" href="{{ .Site.BaseURL }}/contact">Disabled Link</a>
                 </li>
                 -->
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ .Site.BaseURL }}/archive">Archive</a>
-                </li>
+
                 <!--
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
