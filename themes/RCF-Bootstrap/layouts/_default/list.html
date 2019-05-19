@@ -3,12 +3,16 @@
 
 <h1 class="mt-5">{{ .Title }}</h1>
 
+{{ if .Content }}
 {{ .Content }}
-
-{{ range .Pages }}
-<article>
-    <h2>{{ .Title }}</h2>
-</article>
 {{ end }}
+
+<ol reversed>
+{{ range .Pages }}
+<li>
+        <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} - {{.Title}}</a>
+    </li>
+{{ end }}
+</ol>
 </main>
 {{end}}

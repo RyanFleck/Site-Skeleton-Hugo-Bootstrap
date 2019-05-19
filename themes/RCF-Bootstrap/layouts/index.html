@@ -15,4 +15,23 @@
 
 {{ .Content }}
 
+<h3>Sections</h3>
+{{ range .Sections }}
+<p><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+{{ range .Pages }}
+<p> - <a href="{{ .Permalink }}">{{ .Title }}</a></p>
+{{ end }}
+{{ end }}
+
+<h3>Base Pages</h3> 
+
+{{ range where .Site.Pages "Section" .Section }}
+    {{ if .Title }}
+    <p> - <a href="{{ .Permalink }}">{{ .Title }}</a></p>
+    {{ end }}
+{{ end }}
+
+
+
 {{end}}
+
